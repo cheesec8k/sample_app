@@ -3,6 +3,3 @@
 require ::File.expand_path('../config/environment',  __FILE__)
 run SampleApp::Application
 
-require 'sequel'
-Sequel.connect(ENV['DATABASE_URL'] || 'sqlite://my.db')
-
